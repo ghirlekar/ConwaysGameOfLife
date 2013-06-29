@@ -1,0 +1,10 @@
+20/6/2013
+
+Added settings activity.
+Ability to set aa flag.
+Removed bug with randomize
+Better swiping.
+Changed settings to fragments.
+Implemented separate fragments for game and graphics settings.
+Added tabs to switch between above.
+Set swipe trail.

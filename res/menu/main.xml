@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_lock"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/action_title_lock_canvas"/>
+    <item
+        android:id="@+id/action_run"
+        android:orderInCategory="4"
+        android:showAsAction="always"
+        android:title="@string/action_title_play"/>
+    <item
+        android:id="@+id/action_random"
+        android:icon="@drawable/random"
+        android:orderInCategory="6"
+        android:showAsAction="never"
+        android:title="@string/action_title_random"/>
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@drawable/clear"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/action_title_clear"/>
+    <item
+        android:id="@+id/action_slower"
+        android:icon="@drawable/slower"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:title="@string/action_title_slower"/>
+    <item
+        android:id="@+id/action_faster"
+        android:icon="@drawable/faster"
+        android:orderInCategory="5"
+        android:showAsAction="always"
+        android:title="@string/action_title_faster"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/action_title_help"/>
+
+</menu>

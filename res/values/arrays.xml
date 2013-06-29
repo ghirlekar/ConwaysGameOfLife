@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tips">
+        <item>Antialiasing:Set antialiasing on for better graphics. Switching it off reduces battery usage and improves performance.</item>
+        <item>Survival Rule:Survival rules are the number of neighbours that a live cell requires to stay alive till the next round.</item>
+        <item>Birth Rule:Birth rules are the number of neighbours that a dead cell requires to be become live in the next round.</item>
+        <item>Swipe Trail:Swipe trail is the type of trail that your finger leaves when you touch the screen. A rectangular trail leaves a blocky effect whereas a circular trail leaves a more natural effect. Pause the game before swiping to see the difference more clearly.</item>
+        <item>Swipe:Swipe anywhere onscreen to bring the touched cells to life and observe the game.</item>
+        <item>Disable Tips:You can disable the showing of tips dialog on startup by unchecking the option in General Settings.</item>
+        <item>Show Tips:You can also see the tips dialog in game by pressing the Show Tips button under General Settings.</item>
+        <item>FPS:By pressing the faster or slower buttons, you can change the game speed. Faster FPS allows you to see the end result quicker.</item>
+        <item>Canvas Lock:While the canvas is locked, you can swipe onscreen to bring cells to life. When unlocked, you can swipe to pan and pinch to zoom the canvas.</item>
+        <item>Random Fill:Fills the entire canvas with cells randomly. Roughly 30 percent of the cells are brought to life.</item>
+        <item>Clear:Clears the canvas and kills all cells which are alive.</item>
+    </string-array>
+
+</resources>
