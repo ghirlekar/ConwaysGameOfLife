@@ -1,11 +1,8 @@
 package com.gaurav.gameoflife;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Point;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -229,12 +226,9 @@ public class MainActivity extends FragmentActivity {
 			startActivityForResult(settingsIntent, REQUEST_SETTINGS_ACTIVITY);
 			break;
 		case (R.id.action_help):
-			if (isNetworkAvailable())
-				startActivity(new Intent(
-						Intent.ACTION_VIEW,
-						Uri.parse("http://en.m.wikipedia.org/wiki/Conway%27s_game_of_life")));
-			else
-				startActivity(new Intent(this, HelpActivity.class));
+			startActivity(new Intent(
+					Intent.ACTION_VIEW,
+					Uri.parse("http://en.m.wikipedia.org/wiki/Conway%27s_game_of_life")));
 		}
 		return true;
 	}
@@ -307,13 +301,6 @@ public class MainActivity extends FragmentActivity {
 			getDialog().setTitle("Tips - " + tips[tipNumber].split(":")[0]);
 			textMessage.setText(tips[tipNumber].split(":")[1]);
 		}
-	}
-
-	private boolean isNetworkAvailable() {
-		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		NetworkInfo activeNetworkInfo = connectivityManager
-				.getActiveNetworkInfo();
-		return activeNetworkInfo != null && activeNetworkInfo.isConnected();
 	}
 
 }
